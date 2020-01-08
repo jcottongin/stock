@@ -143,7 +143,7 @@ def rewrite():
     x.close()
 rewrite()
 def average():
-    avg = df['avg'][0:44]
+    avg = df['avg'][0:]
     ##avg2=df['avg'].str.strip('Day Average: ') #strip day average
     #print(avg2)
     ##df2=pd.DataFrame(avg2)
