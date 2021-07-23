@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #https://www.cryptocompare.com/coins/guides/how-to-use-our-api/
-#api key      f94cf86af4e4809d8b2ac30cfca435aa69048c0d85666f489865cc4c3905fb38
+#api key      
 #https://www.youtube.com/watch?v=qq0gbTHBI9o
 import cryptocompare
 price = cryptocompare.get_price('BTC', 'USD')
