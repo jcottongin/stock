@@ -1,0 +1,60 @@
+#!/usr/bin/python3
+#https://www.cryptocompare.com/coins/guides/how-to-use-our-api/
+#api key     
+#https://www.youtube.com/watch?v=qq0gbTHBI9o
+import cryptocompare
+price = cryptocompare.get_price('BTC', 'USD')
+print(price)
+
+
+import requests
+from datetime import datetime
+url = "https://min-api.cryptocompare.com/data/price?fsym={}&tsyms={}"
+
+											##convert dollar to euro
+def get_d2e(currency):
+	try:
+		response = request.get(url.format(coin,currency)).json()
+		return response
+	except:
+		return False
+
+for counter in range(1):#while True:
+	date_time=datetime.now()
+	date_time=date_time.strftime("%m/%d/%Y %H/%M")
+	currentPrice = cryptocompare.get_price("USD", "EUR")###, "BTC, EUR") # get btc and usd
+	if currentPrice:
+		print(date_time, "$", currentPrice)
+
+											## btc to usd		
+def get_price(coin, currency):
+	try:
+		response = request.get(url.format(coin,currency)).json()
+		return response
+	except:
+		return False
+
+for counter in range(5):#while True:
+	date_time=datetime.now()
+	date_time=date_time.strftime("%m/%d/%Y %H/%M")
+	currentPrice = cryptocompare.get_price("BTC", "USD")###, "BTC, EUR") # get btc and usd
+	if currentPrice:
+		print(date_time, "$", currentPrice)
+
+#get_price()
+											## btc to euro
+def get_euro(coin, currency):
+	try:
+		response = request.get(url.format(coin,currency)).json()
+		return response
+	except:
+		return False
+
+for counter in range(5):#while True:
+	date_time=datetime.now()
+	date_time=date_time.strftime("%m/%d/%Y %H/%M")
+	currentPrice = cryptocompare.get_price("BTC", "EUR")###, "BTC, EUR") # get btc and usd
+	if currentPrice:
+		print(date_time, "$", currentPrice)
+
+#get_price()
